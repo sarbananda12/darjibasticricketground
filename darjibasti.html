@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Darjibasti Cricket Playground - Live Scores, Player Stats, and Match Details." />
+  <meta name="keywords" content="Cricket, Darjibasti, Live Score, Matches, Player Stats" />
+  <meta name="author" content="Sarbananda Kairi" />
+  <meta property="og:title" content="Darjibasti Cricket Playground" />
+  <meta property="og:description" content="Live scores, player stats, and match details for Darjibasti Cricket Playground." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="http://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+  <title>Darjibasti Cricket Playground</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js').then(
+          function (registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          },
+          function (err) {
+            console.log('ServiceWorker registration failed: ', err);
+          }
+        );
+      });
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "Darjibasti Cricket Playground",
+      "description": "Live Cricket Scores, Player Stats, and Match Details.",
+      "url": "http://darjibasticricketweusg.com",
+      "image": "images/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mazbat",
+        "addressLocality": "Darjibasti",
+        "addressRegion": "Assam",
+        "postalCode": "784507",
+        "addressCountry": "India"
+      },
+      "telephone": "+91 6002983148"
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/home/SarbanandaKairi/darjibasti cricket/images/cricket-equipment-digital-art_23-2151761266.png" alt="Darjibasti Cricket Playground Logo" loading="lazy" />
+    </div>
+    <nav>
+      <button id="nav-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#player-stats">Player Stats</a></li>
+        <li><a href="#live-score">Live Score</a></li>
+        <li><a href="#upcoming-matches">Upcoming Matches</a></li>
+        <li><a href="#past-matches">Past Matches</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Dark/Light Mode Toggle -->
+      <button id="mode-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Darjibasti Cricket Playground</h1>
+        <p>Where Champions Are Made</p>
+        <a href="#contact" class="cta-button">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- Live Score Widget -->
+    <section id="live-score" class="section-padding">
+      <h2>Live Match Score</h2>
+      <div id="live-score-widget" class="score-card">
+        <p>Fetching live score...</p>
+      </div>
+    </section>
+
+    <!-- Countdown Timer for Next Match -->
+    <section id="countdown" class="section-padding">
+      <h2>Next Match Countdown</h2>
+      <div id="timer" class="countdown-card">Loading...</div>
+    </section>
+
+    <!-- Player Stats Section -->
+    <section id="player-stats" class="section-padding bg-light">
+      <h2>Player Stats</h2>
+      <div class="stats-container">
+        <div class="stat-card">
+          <img class="player-img" src="images/player1.jpg" alt="Rohit Singh" loading="lazy" />
+          <h3>Rohit Singh</h3>
+          <p>Runs: 100</p>
+          <p>Wickets: 5</p>
+          <p>Matches played: 10</p>
+        </div>
+        <div class="stat-card">
+          <img class="player-img" src="/home/SarbanandaKairi/darjibasti cricket/images/WhatsApp Image 2025-03-30 at 6.55.36 PM.jpeg" alt="OM Prakash Koiri" loading="lazy" />
+          <h3>OM Prakash Koiri</h3>
+          <p>Runs: 120</p>
+          <p>Wickets: 7</p>
+          <p>Matches played: 0</p>
+        </div>
+        <div class="stat-card">
+          <img class="player-img" src="images/player3.jpg" alt="Sarbananda Kairi" loading="lazy" />
+          <h3>Sarbananda Kairi</h3>
+          <p>Runs: 150</p>
+          <p>Wickets: 10</p>
+          <p>Matches played: 0</p>
+        </div>
+        <!-- Additional player cards... -->
+      </div>
+    </section>
+
+    <!-- Upcoming Matches Section -->
+    <section id="upcoming-matches" class="section-padding">
+      <h2>Upcoming Matches</h2>
+      <div class="match-card">
+        <h3>Match 1 - Kukurakhaiti vs Darjibasti</h3>
+        <p>Date: 31-03-2025</p>
+        <p>Time: 3:45 PM</p>
+        <p>Venue: Darjibasti Cricket Playground</p>
+      </div>
+      <div class="match-card">
+        <h3>Match 2 - Kukurakhaiti vs Darjibasti</h3>
+        <p>Date: 01-04-2025</p>
+        <p>Time: 3:45 PM</p>
+        <p>Venue: Darjibasti Cricket Playground</p>
+      </div>
+    </section>
+
+    <!-- Past Matches Section -->
+    <section id="past-matches" class="section-padding bg-light">
+      <h2>Past Matches</h2>
+      <div id="past-matches-container">
+        <!-- Match cards will be inserted here by JavaScript -->
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <figure>
+          <img src="/home/SarbanandaKairi/darjibasti cricket/images/unnamed.jpg" alt="Gallery Image 1" loading="lazy" />
+          <figcaption>Gallery Image 1</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery2.jpeg" alt="Gallery Image 2" loading="lazy" />
+          <figcaption>Gallery Image 2</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery3.jpg" alt="Gallery Image 3" loading="lazy" />
+          <figcaption>Gallery Image 3</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Google Map Section -->
+    <section id="map" class="section-padding">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d703.821799127264!2d92.31889775271617!3d26.77592507304941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375b370078868155%3A0x1dab61e0c20c36f1!2sDarjibasti%20Cricket%20Ground!5e1!3m2!1sen!2sin!4v1743317151467!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:surajkoiri864@gmail.com">surajkoiri864@gmail.com</a></p>
+      <p>Phone: <a href="tel:+916002983148">+91 6002983148</a></p>
+      <form id="contact-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="form-email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Player Modal (Hidden by Default) -->
+    <div id="playerModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <span class="close" id="modal-close" aria-label="Close Modal">&times;</span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-runs"></p>
+        <p id="modal-wickets"></p>
+        <p id="modal-matches-played"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Darjibasti Cricket Playground | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
