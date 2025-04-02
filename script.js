@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* Countdown Timer Implementation */
   const timerElement = document.getElementById('timer');
-  const targetDate = new Date('March 31, 2025 15:45:00').getTime();
+  const targetDate = new Date('April 1, 2025 15:45:00').getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
@@ -131,17 +131,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const pastMatches = [
     {
       title: "Match 1 - Darjibasti vs Kukurakhaiti",
-      date: "28-03-2025",
+      date: "30-03-2025",
       time: "3:45 PM",
       venue: "Darjibasti Cricket Playground",
-      summary: "Darjibasti won by 6 wickets. Top performer: Rohit Singh with 75 runs."
+      summary: "Darjibasti won by 3 wickets and 1 run. Top performer: Rohit Singh with 20 runs."
     },
     {
       title: "Match 2 - Darjibasti vs Kukurakhaiti",
-      date: "27-03-2025",
+      date: "31-03-2025",
       time: "4:00 PM",
       venue: "Darjibasti Cricket Playground",
-      summary: "A thrilling finish with Kukurakhaiti securing a narrow win. Top bowler: OM Prakash Koiri with 4 wickets."
+      summary: "The match was tied between the both teams has scored 64. Top bowler: Manjeet with 3 wickets."
     }
     // You can add more matches as needed.
   ];
